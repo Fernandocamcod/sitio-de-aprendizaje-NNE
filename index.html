@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Aprender es Divertido! - Apoyo para Niños</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> </head>
+<body>
+    <header>
+        <h1>¡Aprender es Divertido! 🎉</h1>
+        <p>Un espacio para explorar, jugar y crecer.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#ejercicios-lectura">Lectura</a></li>
+            <li><a href="#ejercicios-matematicas">Matemáticas</a></li>
+            <li><a href="#ejercicios-memoria">Memoria</a></li>
+            <li><a href="#recursos-adicionales">Recursos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="bienvenida">
+            <h2>¡Hola Pequeño Explorador!</h2>
+            <p>Aquí encontrarás juegos y actividades para que el aprendizaje sea súper divertido. ¡Vamos a empezar!</p>
+            <img src="assets/images/nino-leyendo.png" alt="Niño feliz leyendo un libro" class="hero-image">
+        </section>
+
+        <section id="ejercicios-lectura" class="seccion-ejercicio">
+            <h2>📚 Ejercicios de Lectura</h2>
+            <div class="ejercicio-card">
+                <h3>Formando Palabras</h3>
+                <p>Arrastra las letras para formar la palabra correcta. ¡Escucha el sonido!</p>
+                <div class="area-interactiva" id="formar-palabras">
+                    <div class="palabra-objetivo" data-palabra="GATO"></div>
+                    <div class="letras-disponibles"></div>
+                    <button class="boton-verificar">Verificar</button>
+                    <p class="retroalimentacion"></p>
+                </div>
+                <audio id="audio-gato" src="assets/audio/gato.mp3" preload="auto"></audio>
+            </div>
+            <div class="ejercicio-card">
+                <h3>Uniendo Dibujos y Palabras</h3>
+                <p>Haz clic en el dibujo y luego en la palabra que le corresponde.</p>
+                <div class="area-interactiva" id="unir-dibujos">
+                    </div>
+                <p class="retroalimentacion"></p>
+            </div>
+        </section>
+
+        <section id="ejercicios-matematicas" class="seccion-ejercicio">
+            <h2>➕ Ejercicios de Matemáticas</h2>
+            <div class="ejercicio-card">
+                <h3>Contando Objetos</h3>
+                <p>¿Cuántos objetos hay en la imagen? Escribe el número.</p>
+                <div class="area-interactiva" id="contar-objetos">
+                    <img src="assets/images/manzanas.png" alt="Manzanas" class="imagen-ejercicio">
+                    <input type="number" id="input-manzanas" placeholder="¿Cuántas hay?">
+                    <button class="boton-verificar">Verificar</button>
+                    <p class="retroalimentacion"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejercicios-memoria" class="seccion-ejercicio">
+            <h2>🧠 Ejercicios de Memoria</h2>
+            <div class="ejercicio-card">
+                <h3>Encuentra las Parejas</h3>
+                <p>Haz clic en las tarjetas para encontrar las parejas iguales.</p>
+                <div class="area-interactiva" id="memoria-game">
+                    </div>
+            </div>
+        </section>
+
+        <section id="recursos-adicionales" class="seccion-ejercicio">
+            <h2>💡 Recursos Adicionales</h2>
+            <div class="recurso-item">
+                <h3>Cuentos Adaptados</h3>
+                <p>Cuentos cortos con letras grandes y apoyo visual.</p>
+                <a href="#" class="boton-recurso">Ver Cuentos</a>
+            </div>
+            <div class="recurso-item">
+                <h3>Consejos para Padres</h3>
+                <p>Información útil para apoyar el aprendizaje en casa.</p>
+                <a href="#" class="boton-recurso">Leer Consejos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aprender es Divertido. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
